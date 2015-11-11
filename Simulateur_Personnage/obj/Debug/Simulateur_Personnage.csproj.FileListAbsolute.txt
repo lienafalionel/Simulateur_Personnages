@@ -1,0 +1,1 @@
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\Simulateur_Personnage\bin\Debug\Simulateur_Personnage.exe.config
