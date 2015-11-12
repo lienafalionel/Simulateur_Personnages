@@ -1,29 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using Simulateur_Personnage.ClassesAbstraites;
 
 namespace Simulateur_Personnage
 {
-    abstract class PlateauDeJeuAbstrait
+    public abstract class PlateauDeJeuAbstrait
     {
-        private List<ZoneAbstraite> zoneList;
-        private List<AccesAbstrait> accesList;
+        private readonly List<ZoneAbstraite> _zoneList;
+        private readonly List<AccesAbstrait> _accesList;
 
         public PlateauDeJeuAbstrait()
         {
-            zoneList = new List<ZoneAbstraite>();
-            accesList = new List<AccesAbstrait>();
+            _zoneList = new List<ZoneAbstraite>();
+            _accesList = new List<AccesAbstrait>();
         }
 
-        public void ajouteAcces(AccesAbstrait accesAbstrait)
+        public void AjouteAcces(AccesAbstrait accesAbstrait)
         {
-            accesList.Add(accesAbstrait);
+            _accesList.Add(accesAbstrait);
         }
 
-        public void ajouteZone(ZoneAbstraite zoneAbstraite)
+        public void AjouteZone(ZoneAbstraite zoneAbstraite)
         {
-            zoneList.Add(zoneAbstraite);
+            _zoneList.Add(zoneAbstraite);
         }
     }
 }

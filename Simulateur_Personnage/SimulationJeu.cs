@@ -1,31 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Simulateur_Personnage.Fabrique;
 
 namespace Simulateur_Personnage
 {
-    class SimulationJeu
+    public class SimulationJeu
     {
-        private EnvironnementDeJeu environnement = new EnvironnementDeJeu();
+        private readonly EnvironnementDeJeu _environnement = new EnvironnementDeJeu();
 
-        public void creerPlateauDeJeu()
+        public void CreerPlateauDeJeu()
         {
-            FabriquePlateauDeJeu fabrique = new FabriquePlateauDeJeu();
-            environnement.creerPlateauDeJeu(fabrique);
+            var fabrique = new FabriquePlateauDeJeu();
+            _environnement.CreerPlateauDeJeu(fabrique);
         }
 
-        public void creerFourmiliere()
+        public void CreerFourmiliere()
         {
-            FabriqueFourmiliere fabrique = new FabriqueFourmiliere();
-            environnement.creerPlateauDeJeu(fabrique);
+            var fabrique = new FabriqueFourmiliere();
+            _environnement.CreerPlateauDeJeu(fabrique);
         }
 
-        public void creerLabyrinthe()
+        public void CreerLabyrinthe()
         {
-            FabriqueLabyrinthe fabrique = new FabriqueLabyrinthe();
-            environnement.creerPlateauDeJeu(fabrique);
+            var fabrique = new FabriqueLabyrinthe();
+            _environnement.CreerPlateauDeJeu(fabrique);
         }
     }
 }

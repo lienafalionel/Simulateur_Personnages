@@ -11,3 +11,16 @@ C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\Simulateur_Personna
 C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.exe
 C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.pdb
 C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\bin\Debug\Simulateur_Personnage.exe.config
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.exe
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.pdb
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\bin\Debug\Simulateur_Personnage.exe
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\bin\Debug\Simulateur_Personnage.pdb
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.csprojResolveAssemblyReference.cache
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\MainWindow.baml
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\MainWindow.g.cs
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\App.g.cs
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\Simulateur_Personnage_MarkupCompile.cache
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.g.resources
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.Properties.Resources.resources
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\Simulateur_Personnage.csproj.GenerateResource.Cache

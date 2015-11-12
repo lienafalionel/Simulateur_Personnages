@@ -53,30 +53,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Adjacent.cs" />
-    <Compile Include="BoutTerrain.cs" />
-    <Compile Include="FabriqueFourmiliere.cs" />
-    <Compile Include="FabriqueLabyrinthe.cs" />
-    <Compile Include="FabriquePlateauDeJeu.cs" />
+    <Compile Include="ClassesAbstraites\Adjacent.cs" />
+    <Compile Include="ClassesAbstraites\BoutTerrain.cs" />
+    <Compile Include="Fabrique\FabriqueFourmiliere.cs" />
+    <Compile Include="Fabrique\FabriqueLabyrinthe.cs" />
+    <Compile Include="Fabrique\FabriquePlateauDeJeu.cs" />
     <Compile Include="Fourmiliere.cs" />
     <Compile Include="Labyrinthe.cs" />
     <Compile Include="SimulationJeu.cs" />
-    <Compile Include="Tunnel.cs" />
-    <Compile Include="Zone.cs" />
-    <Compile Include="ZoneAbstraite.cs" />
+    <Compile Include="ClassesAbstraites\Tunnel.cs" />
+    <Compile Include="ClassesAbstraites\Zone.cs" />
+    <Compile Include="ClassesAbstraites\ZoneAbstraite.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Acces.cs" />
-    <Compile Include="AccesAbstrait.cs" />
+    <Compile Include="ClassesAbstraites\Acces.cs" />
+    <Compile Include="ClassesAbstraites\AccesAbstrait.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Case.cs" />
+    <Compile Include="ClassesAbstraites\Case.cs" />
     <Compile Include="EnvironnementDeJeu.cs" />
-    <Compile Include="FabriquePlateauDeJeuAbstrait.cs" />
+    <Compile Include="Fabrique\FabriquePlateauDeJeuAbstrait.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

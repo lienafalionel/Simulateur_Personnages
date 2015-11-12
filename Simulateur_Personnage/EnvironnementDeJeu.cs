@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Simulateur_Personnage.Fabrique;
 
 namespace Simulateur_Personnage
 {
-    class EnvironnementDeJeu
+    public class EnvironnementDeJeu
     {
-        private PlateauDeJeuAbstrait plateauDeJeu;
+        private PlateauDeJeuAbstrait _plateauDeJeu;
 
-        public PlateauDeJeuAbstrait creerPlateauDeJeu(FabriquePlateauDeJeuAbstrait fabrique)
+        public PlateauDeJeuAbstrait CreerPlateauDeJeu(FabriquePlateauDeJeuAbstrait fabrique)
         {
-            PlateauDeJeuAbstrait unPlateauDeJeu = fabrique.creerPlateauDeJeu();
-            ZoneAbstraite zone1 = fabrique.creerZone("Zone d'origine");
-            ZoneAbstraite zone2 = fabrique.creerZone("Zone de destination");
-            AccesAbstrait acces1 = fabrique.creerAcces(zone1, zone2);
-            unPlateauDeJeu.ajouteZone(zone1);
-            unPlateauDeJeu.ajouteZone(zone2);
-            unPlateauDeJeu.ajouteAcces(acces1);
-            return unPlateauDeJeu;
+            _plateauDeJeu = fabrique.CreerPlateauDeJeu();
+            var zone1 = fabrique.CreerZone("Zone d'origine");
+            var zone2 = fabrique.CreerZone("Zone de destination");
+            var acces1 = fabrique.CreerAcces(zone1, zone2);
+            _plateauDeJeu.AjouteZone(zone1);
+            _plateauDeJeu.AjouteZone(zone2);
+            _plateauDeJeu.AjouteAcces(acces1);
+            return _plateauDeJeu;
         }
 
         /*public virtual Zone creerZone()
