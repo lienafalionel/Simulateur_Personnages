@@ -58,6 +58,8 @@
     <Compile Include="FabriqueFourmiliere.cs" />
     <Compile Include="FabriqueLabyrinthe.cs" />
     <Compile Include="FabriquePlateauDeJeu.cs" />
+    <Compile Include="Fourmiliere.cs" />
+    <Compile Include="Labyrinthe.cs" />
     <Compile Include="SimulationJeu.cs" />
     <Compile Include="Tunnel.cs" />
     <Compile Include="Zone.cs" />

@@ -8,5 +8,9 @@ namespace Simulateur_Personnage
 {
     class BoutTerrain : ZoneAbstraite
     {
+        public BoutTerrain(string unNom) : base(unNom)
+        {
+
+        }
     }
 }

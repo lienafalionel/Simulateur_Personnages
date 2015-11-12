@@ -8,12 +8,28 @@ namespace Simulateur_Personnage
 {
     class EnvironnementDeJeu
     {
-
-        private PlateauDeJeu plateauDeJeu;
+        private PlateauDeJeuAbstrait plateauDeJeu;
 
         public PlateauDeJeuAbstrait creerPlateauDeJeu(FabriquePlateauDeJeuAbstrait fabrique)
         {
-            return fabrique.creerPlateauDeJeu();
+            PlateauDeJeuAbstrait unPlateauDeJeu = fabrique.creerPlateauDeJeu();
+            ZoneAbstraite zone1 = fabrique.creerZone("Zone d'origine");
+            ZoneAbstraite zone2 = fabrique.creerZone("Zone de destination");
+            AccesAbstrait acces1 = fabrique.creerAcces(zone1, zone2);
+            unPlateauDeJeu.ajouteZone(zone1);
+            unPlateauDeJeu.ajouteZone(zone2);
+            unPlateauDeJeu.ajouteAcces(acces1);
+            return unPlateauDeJeu;
         }
+
+        /*public virtual Zone creerZone()
+        {
+
+        }
+
+        public virtual Acces creerAcces()
+        {
+
+        }*/
     }
 }

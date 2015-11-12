@@ -8,7 +8,7 @@ namespace Simulateur_Personnage
 {
     class Acces : AccesAbstrait
     {
-        public Acces(Zone uneZoneOrigine, Zone uneZoneDestination) : base(uneZoneOrigine, uneZoneDestination)
+        public Acces(ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination) : base(uneZoneOrigine, uneZoneDestination)
         {
 
         }

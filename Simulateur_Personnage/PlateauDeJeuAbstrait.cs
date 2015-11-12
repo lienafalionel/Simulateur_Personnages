@@ -8,12 +8,12 @@ namespace Simulateur_Personnage
     abstract class PlateauDeJeuAbstrait
     {
         private List<ZoneAbstraite> zoneList;
-        private List<AccesAbstraite> accesList;
+        private List<AccesAbstrait> accesList;
 
         public PlateauDeJeuAbstrait()
         {
             zoneList = new List<ZoneAbstraite>();
-            accesList = new List<AccesAbstraire>();
+            accesList = new List<AccesAbstrait>();
         }
 
         public void ajouteAcces(AccesAbstrait accesAbstrait)

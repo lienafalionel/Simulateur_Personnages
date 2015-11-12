@@ -8,5 +8,10 @@ namespace Simulateur_Personnage
 {
     class Adjacent : AccesAbstrait
     {
+        public Adjacent(Case caseUn, Case caseDeux)
+            : base(caseUn, caseDeux)
+        {
+
+        }
     }
 }

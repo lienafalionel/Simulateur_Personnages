@@ -8,7 +8,13 @@ namespace Simulateur_Personnage
 {
     class SimulationJeu
     {
-        private EnvironnementDeJeu environnement;
+        private EnvironnementDeJeu environnement = new EnvironnementDeJeu();
+
+        public void creerPlateauDeJeu()
+        {
+            FabriquePlateauDeJeu fabrique = new FabriquePlateauDeJeu();
+            environnement.creerPlateauDeJeu(fabrique);
+        }
 
         public void creerFourmiliere()
         {

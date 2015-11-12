@@ -9,8 +9,8 @@ namespace Simulateur_Personnage
     {
         public abstract PlateauDeJeuAbstrait creerPlateauDeJeu();
 
-        public abstract Zone creerZone();
+        public abstract ZoneAbstraite creerZone(string unNom);
 
-        public abstract Acces creerAcces(Zone zoneUn, Zone zoneDeux);
+        public abstract AccesAbstrait creerAcces(ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination);
     }
 }

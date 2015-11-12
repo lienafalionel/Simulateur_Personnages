@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Simulateur_Personnage
 {
-    class Case : ZoneAbstraite
+    class Labyrinthe : PlateauDeJeuAbstrait
     {
-        public Case(string unNom) : base(unNom)
-        {
-
-        }
     }
 }

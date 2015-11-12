@@ -7,5 +7,9 @@ namespace Simulateur_Personnage
 {
     class Zone : ZoneAbstraite
     {
+        public Zone(string unNom) : base(unNom)
+        {
+
+        }
     }
 }
