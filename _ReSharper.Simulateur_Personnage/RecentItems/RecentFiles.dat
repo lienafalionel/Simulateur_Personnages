@@ -18,6 +18,16 @@
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:Fourmiliere.cs" caret="96" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueFourmiliere.cs" caret="645" fromTop="22" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueLabyrinthe.cs" caret="245" fromTop="6" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Utilities/f:RelayCommand.cs" caret="192" fromTop="9" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Utilities/f:BooleanConverter.cs" caret="239" fromTop="9" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:App.xaml" caret="210" fromTop="4" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:App.xaml.cs" caret="251" fromTop="9" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml.cs" caret="120" fromTop="4" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Personnage.cs" caret="105" fromTop="4" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Pacman.cs" caret="0" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Fantome.cs" caret="106" fromTop="7" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowViewModel.cs" caret="281" fromTop="9" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml" caret="430" fromTop="13" />
   </RecentFiles>
   <RecentEdits>
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:AccesAbstrait.cs" caret="334" fromTop="9" />
@@ -38,5 +48,15 @@
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:EnvironnementDeJeu.cs" caret="0" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueFourmiliere.cs" caret="285" fromTop="8" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueLabyrinthe.cs" caret="283" fromTop="8" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Utilities/f:RelayCommand.cs" caret="1243" fromTop="54" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Utilities/f:BooleanConverter.cs" caret="163" fromTop="6" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:App.xaml" caret="221" fromTop="4" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:App.xaml.cs" caret="0" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml.cs" caret="168" fromTop="6" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Personnage.cs" caret="42" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Pacman.cs" caret="0" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Fantome.cs" caret="0" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowViewModel.cs" caret="1017" fromTop="33" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml" caret="947" fromTop="21" />
   </RecentEdits>
 </RecentFiles>

@@ -63,6 +63,7 @@
     <Compile Include="Fabrique\FabriquePlateauDeJeu.cs" />
     <Compile Include="Fourmiliere.cs" />
     <Compile Include="Labyrinthe.cs" />
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Personnages\Fantome.cs" />
     <Compile Include="Personnages\Pacman.cs" />
     <Compile Include="Personnages\Personnage.cs" />
@@ -70,7 +71,9 @@
     <Compile Include="ClassesAbstraites\Tunnel.cs" />
     <Compile Include="ClassesAbstraites\Zone.cs" />
     <Compile Include="ClassesAbstraites\ZoneAbstraite.cs" />
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Utilities\BooleanConverter.cs" />
+    <Compile Include="Utilities\RelayCommand.cs" />
+    <Page Include="MainWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -83,8 +86,8 @@
     <Compile Include="ClassesAbstraites\Case.cs" />
     <Compile Include="EnvironnementDeJeu.cs" />
     <Compile Include="Fabrique\FabriquePlateauDeJeuAbstrait.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="MainWindowView.xaml.cs">
+      <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
