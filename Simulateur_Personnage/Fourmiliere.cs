@@ -2,6 +2,9 @@
 {
     public class Fourmiliere : PlateauDeJeuAbstrait
     {
+        public Fourmiliere()
+        {
 
+        }
     }
 }

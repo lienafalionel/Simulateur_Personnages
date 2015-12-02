@@ -1,0 +1,8 @@
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\ConsoleApplication1\bin\Debug\Simulateur_Personnage.exe
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\ConsoleApplication1\bin\Debug\Simulateur_Personnage.pdb
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

@@ -23,6 +23,14 @@ namespace Simulateur_Personnage
         public MainWindow()
         {
             InitializeComponent();
+            SimulationJeu simulateur = new SimulationJeu();
+            simulateur.CreerPlateauDeJeu();
+            Console.WriteLine("test");
+        }
+
+        private void MenuItem_Quitter(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

@@ -11,12 +11,12 @@ namespace Simulateur_Personnage.Fabrique
 
         public override ZoneAbstraite CreerZone(string unNom)
         {
-            return new Zone(unNom);
+            return new Case(unNom);
         }
 
         public override AccesAbstrait CreerAcces(ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination)
         {
-            return new Acces(uneZoneOrigine, uneZoneDestination);
+            return new Adjacent(uneZoneOrigine, uneZoneDestination);
         }
     }
 }

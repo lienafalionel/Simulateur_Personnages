@@ -55,11 +55,17 @@
     </ApplicationDefinition>
     <Compile Include="ClassesAbstraites\Adjacent.cs" />
     <Compile Include="ClassesAbstraites\BoutTerrain.cs" />
+    <Compile Include="Comportements\ComportementAttaque.cs" />
+    <Compile Include="Comportements\ComportementCombat.cs" />
+    <Compile Include="Comportements\ComportementFuite.cs" />
     <Compile Include="Fabrique\FabriqueFourmiliere.cs" />
     <Compile Include="Fabrique\FabriqueLabyrinthe.cs" />
     <Compile Include="Fabrique\FabriquePlateauDeJeu.cs" />
     <Compile Include="Fourmiliere.cs" />
     <Compile Include="Labyrinthe.cs" />
+    <Compile Include="Personnages\Fantome.cs" />
+    <Compile Include="Personnages\Pacman.cs" />
+    <Compile Include="Personnages\Personnage.cs" />
     <Compile Include="SimulationJeu.cs" />
     <Compile Include="ClassesAbstraites\Tunnel.cs" />
     <Compile Include="ClassesAbstraites\Zone.cs" />

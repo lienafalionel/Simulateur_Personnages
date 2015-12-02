@@ -17,15 +17,5 @@ namespace Simulateur_Personnage
             _plateauDeJeu.AjouteAcces(acces1);
             return _plateauDeJeu;
         }
-
-        /*public virtual Zone creerZone()
-        {
-
-        }
-
-        public virtual Acces creerAcces()
-        {
-
-        }*/
     }
 }

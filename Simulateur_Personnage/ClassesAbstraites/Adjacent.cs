@@ -2,8 +2,8 @@
 {
     public class Adjacent : AccesAbstrait
     {
-        public Adjacent(Case caseUn, Case caseDeux)
-            : base(caseUn, caseDeux)
+        public Adjacent(ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination)
+            : base(uneZoneOrigine, uneZoneDestination)
         {
 
         }
