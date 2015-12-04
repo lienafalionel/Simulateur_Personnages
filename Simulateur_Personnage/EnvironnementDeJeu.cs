@@ -1,4 +1,5 @@
 ﻿using Simulateur_Personnage.Fabrique;
+using Simulateur_Personnage.Personnages;
 
 namespace Simulateur_Personnage
 {
@@ -9,12 +10,19 @@ namespace Simulateur_Personnage
         public PlateauDeJeuAbstrait CreerPlateauDeJeu(FabriquePlateauDeJeuAbstrait fabrique)
         {
             _plateauDeJeu = fabrique.CreerPlateauDeJeu();
-            var zone1 = fabrique.CreerZone("Zone d'origine");
-            var zone2 = fabrique.CreerZone("Zone de destination");
-            var acces1 = fabrique.CreerAcces(zone1, zone2);
-            _plateauDeJeu.AjouteZone(zone1);
-            _plateauDeJeu.AjouteZone(zone2);
-            _plateauDeJeu.AjouteAcces(acces1);
+
+
+            //var zone1 = fabrique.CreerZone("Zone d'origine");
+            //var zone2 = fabrique.CreerZone("Zone de destination");
+            //var acces1 = fabrique.CreerAcces(zone1, zone2);
+
+            _plateauDeJeu.AjoutePersonnage(new PacMan());
+            _plateauDeJeu.AjoutePersonnage(new Fantome());
+            _plateauDeJeu.AjoutePersonnage(new Fantome());
+            _plateauDeJeu.AjoutePersonnage(new Fantome());
+            //_plateauDeJeu.AjouteZone(zone1);
+            //_plateauDeJeu.AjouteZone(zone2);
+            //_plateauDeJeu.AjouteAcces(acces1);
             return _plateauDeJeu;
         }
     }

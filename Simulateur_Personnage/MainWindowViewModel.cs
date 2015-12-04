@@ -9,10 +9,6 @@ namespace Simulateur_Personnage
         public MainWindowViewModel()
         {
             InitializeCommand();
-
-            //à lionel
-            var simulateur = new SimulationJeu();
-            simulateur.CreerPlateauDeJeu();
         }
 
         #region ICommands
@@ -36,7 +32,8 @@ namespace Simulateur_Personnage
 
         private void SimulationPacManExecuteCommand()
         {
-
+            var simulateur = new SimulationJeu();
+            simulateur.CreerPacMan();
         }
 
         #endregion

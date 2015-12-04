@@ -4,7 +4,8 @@ namespace Simulateur_Personnage.Personnages
 {
     public abstract class Personnage
     {
-        private ComportementCombat _comportementCombat = null;
+        private int _id;
+        public ComportementCombat _comportementCombat { get; set; }
 
     }
 }

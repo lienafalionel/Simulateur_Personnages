@@ -1,4 +1,5 @@
 ﻿using Simulateur_Personnage.ClassesAbstraites;
+using Simulateur_Personnage.Objets;
 
 namespace Simulateur_Personnage.Fabrique
 {
@@ -9,9 +10,9 @@ namespace Simulateur_Personnage.Fabrique
             return new Labyrinthe();
         }
 
-        public override ZoneAbstraite CreerZone(string unNom)
+        public override ZoneAbstraite CreerZone(int unePositionX, int unePositionY)
         {
-            return new Case(unNom);
+            return new Case(unePositionX, unePositionY);
         }
 
         public override AccesAbstrait CreerAcces(ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination)

@@ -58,14 +58,22 @@
     <Compile Include="Comportements\ComportementAttaque.cs" />
     <Compile Include="Comportements\ComportementCombat.cs" />
     <Compile Include="Comportements\ComportementFuite.cs" />
+    <Compile Include="Fabrique\FabriqueFantome.cs" />
+    <Compile Include="Fabrique\FabriqueLabyrinthePacMan.cs" />
     <Compile Include="Fabrique\FabriqueFourmiliere.cs" />
     <Compile Include="Fabrique\FabriqueLabyrinthe.cs" />
+    <Compile Include="Fabrique\FabriquePacMan.cs" />
+    <Compile Include="Fabrique\FabriquePersonnage.cs" />
     <Compile Include="Fabrique\FabriquePlateauDeJeu.cs" />
     <Compile Include="Fourmiliere.cs" />
     <Compile Include="Labyrinthe.cs" />
     <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="Objets\SuperPacGomme.cs" />
+    <Compile Include="Objets\PacGomme.cs" />
+    <Compile Include="Objets\Objet.cs" />
+    <Compile Include="LabyrinthePacMan.cs" />
     <Compile Include="Personnages\Fantome.cs" />
-    <Compile Include="Personnages\Pacman.cs" />
+    <Compile Include="Personnages\PacMan.cs" />
     <Compile Include="Personnages\Personnage.cs" />
     <Compile Include="SimulationJeu.cs" />
     <Compile Include="ClassesAbstraites\Tunnel.cs" />
@@ -119,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ressources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

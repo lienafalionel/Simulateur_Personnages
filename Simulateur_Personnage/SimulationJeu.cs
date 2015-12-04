@@ -23,5 +23,11 @@ namespace Simulateur_Personnage
             var fabrique = new FabriqueLabyrinthe();
             _environnement.CreerPlateauDeJeu(fabrique);
         }
+
+        public void CreerPacMan()
+        {
+            var fabrique = new FabriqueLabyrinthePacMan();
+            _environnement.CreerPlateauDeJeu(fabrique);
+        }
     }
 }

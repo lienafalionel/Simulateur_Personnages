@@ -1,9 +1,10 @@
-﻿namespace Simulateur_Personnage.ClassesAbstraites
+﻿using Simulateur_Personnage.Objets;
+namespace Simulateur_Personnage.ClassesAbstraites
 {
     public class Zone : ZoneAbstraite
     {
-        public Zone(string unNom)
-            : base(unNom)
+        public Zone(int unePositionX, int unePositionY)
+            : base(unePositionX, unePositionY)
         {
 
         }
