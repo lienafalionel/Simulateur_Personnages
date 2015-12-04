@@ -1,5 +1,9 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Input;
+using System.Xml;
+using Simulateur_Personnage.ClassesAbstraites;
+using Simulateur_Personnage.Objets;
 using Simulateur_Personnage.Utilities;
 
 namespace Simulateur_Personnage

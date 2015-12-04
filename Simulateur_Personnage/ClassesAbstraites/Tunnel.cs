@@ -2,8 +2,8 @@
 {
     public class Tunnel : AccesAbstrait
     {
-        public Tunnel(ZoneAbstraite boutTerrainUn, ZoneAbstraite boutTerrainDeux)
-            : base(boutTerrainUn, boutTerrainDeux)
+        public Tunnel(int id, ZoneAbstraite boutTerrainUn, ZoneAbstraite boutTerrainDeux)
+            : base(id, boutTerrainUn, boutTerrainDeux)
         {
 
         }

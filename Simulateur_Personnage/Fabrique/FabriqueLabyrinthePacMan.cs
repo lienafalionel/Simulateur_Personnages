@@ -1,12 +1,8 @@
 ﻿using Simulateur_Personnage.ClassesAbstraites;
-using Simulateur_Personnage.Fabrique;
 using Simulateur_Personnage.Objets;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace Simulateur_Personnage
+namespace Simulateur_Personnage.Fabrique
 {
     public class FabriqueLabyrinthePacMan : FabriquePlateauDeJeuAbstrait
     {
@@ -15,14 +11,14 @@ namespace Simulateur_Personnage
             return new LabyrinthePacMan();
         }
 
-        public override ZoneAbstraite CreerZone(int unePositionX, int unePositionY)
+        public override ZoneAbstraite CreerZone(int unId, int unePositionX, int unePositionY, List<Objet> listObjets)
         {
-            return new Case(unePositionX, unePositionY);
+            return new Case(unId, unePositionX, unePositionY, listObjets);
         }
 
-        public override AccesAbstrait CreerAcces(ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination)
+        public override AccesAbstrait CreerAcces(int id, ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination)
         {
-            return new Acces(uneZoneOrigine, uneZoneDestination);
+            return new Acces(id, uneZoneOrigine, uneZoneDestination);
         }
     }
 }

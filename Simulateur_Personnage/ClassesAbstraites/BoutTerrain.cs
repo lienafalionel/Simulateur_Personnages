@@ -1,9 +1,12 @@
-﻿namespace Simulateur_Personnage.ClassesAbstraites
+﻿using System.Collections.Generic;
+using Simulateur_Personnage.Objets;
+
+namespace Simulateur_Personnage.ClassesAbstraites
 {
     public class BoutTerrain : ZoneAbstraite
     {
-        public BoutTerrain(int unePositionX, int unePositionY)
-            : base(unePositionX, unePositionY)
+        public BoutTerrain(int unId, int unePositionX, int unePositionY, List<Objet> listObjets)
+            : base(unId, unePositionX, unePositionY, listObjets)
         {
 
         }

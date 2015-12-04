@@ -2,7 +2,8 @@
 {
     public class Acces : AccesAbstrait
     {
-        public Acces(ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination) : base(uneZoneOrigine, uneZoneDestination)
+        public Acces(int id, ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination)
+            : base(id, uneZoneOrigine, uneZoneDestination)
         {
 
         }

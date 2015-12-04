@@ -130,7 +130,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Resource Include="Ressources\Pacman\XML.txt" />
+    <Resource Include="Ressources\Pacman\Pacman.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Ressources\Pacman\Map PacMan.PNG" />
     <Resource Include="Ressources\Pacman\Pacman-bleu.jpg" />
     <Resource Include="Ressources\Pacman\Pacman-rose.jpg" />

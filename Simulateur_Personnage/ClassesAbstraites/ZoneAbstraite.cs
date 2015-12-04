@@ -5,7 +5,7 @@ namespace Simulateur_Personnage.ClassesAbstraites
 {
     public abstract class ZoneAbstraite
     {
-        private int _id;
+        public int Id;
         private List<Objet> _objetList;
         private List<Personnage> _personnageList;
         private int _positionX;
@@ -13,10 +13,10 @@ namespace Simulateur_Personnage.ClassesAbstraites
 
         private static int MAX_ID = 0;
 
-        public ZoneAbstraite(int unId, int unePositionX, int unePositionY)
+        public ZoneAbstraite(int unId, int unePositionX, int unePositionY, List<Objet> listObjets)
         {
-            _id = unId;
-            _objetList = new List<Objet>();
+            Id = unId;
+            _objetList = listObjets;
             _personnageList = new List<Personnage>();
             _positionX = unePositionX;
             _positionY = unePositionY;
@@ -24,7 +24,7 @@ namespace Simulateur_Personnage.ClassesAbstraites
 
         public ZoneAbstraite(int unePositionX, int unePositionY)
         {
-            _id = MAX_ID + 1;
+            Id = MAX_ID + 1;
             _objetList = new List<Objet>();
             _personnageList = new List<Personnage>();
             _positionX = unePositionX;
