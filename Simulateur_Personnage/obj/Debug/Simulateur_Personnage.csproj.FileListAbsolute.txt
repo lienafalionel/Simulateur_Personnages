@@ -24,3 +24,4 @@ C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnage
 C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\MainWindowView.g.cs
 C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\Simulateur_Personnage\obj\Debug\MainWindowView.baml
 C:\Users\Lionel\Documents\workspace\C#\Simulateur_Personnage\Simulateur_Personnage\obj\Debug\MainWindowView.g.cs
+C:\Users\Emil\Desktop\ESGI\5eAnnée\Design Patterns\Projet\Simulateur_Personnages\Simulateur_Personnage\obj\Debug\Simulateur_Personnage_Content.g.cs

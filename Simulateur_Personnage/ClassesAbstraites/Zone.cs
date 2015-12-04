@@ -1,5 +1,4 @@
-﻿using Simulateur_Personnage.Objets;
-namespace Simulateur_Personnage.ClassesAbstraites
+﻿namespace Simulateur_Personnage.ClassesAbstraites
 {
     public class Zone : ZoneAbstraite
     {

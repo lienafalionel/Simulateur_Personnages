@@ -1,23 +1,16 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:BoutTerrain.cs" caret="65" fromTop="2" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Adjacent.cs" caret="129" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Case.cs" caret="0" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Zone.cs" caret="65" fromTop="2" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:ZoneAbstraite.cs" caret="225" fromTop="9" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePlateauDeJeu.cs" caret="411" fromTop="6" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:PlateauDeJeu.cs" caret="0" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:Labyrinthe.cs" caret="0" fromTop="0" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:PlateauDeJeuAbstrait.cs" caret="715" fromTop="24" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:SimulationJeu.cs" caret="0" fromTop="0" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePlateauDeJeuAbstrait.cs" caret="416" fromTop="12" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:AccesAbstrait.cs" caret="225" fromTop="7" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Tunnel.cs" caret="271" fromTop="11" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Acces.cs" caret="264" fromTop="10" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:EnvironnementDeJeu.cs" caret="142" fromTop="6" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:Fourmiliere.cs" caret="96" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueFourmiliere.cs" caret="645" fromTop="22" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueLabyrinthe.cs" caret="245" fromTop="6" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Utilities/f:RelayCommand.cs" caret="192" fromTop="9" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Utilities/f:BooleanConverter.cs" caret="239" fromTop="9" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:App.xaml" caret="210" fromTop="4" />
@@ -26,8 +19,15 @@
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Personnage.cs" caret="105" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Pacman.cs" caret="0" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Fantome.cs" caret="106" fromTop="7" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowViewModel.cs" caret="281" fromTop="9" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml" caret="430" fromTop="13" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowViewModel.cs" caret="389" fromTop="14" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml" caret="1209" fromTop="20" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:SimulationJeu.cs" caret="256" fromTop="9" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:PlateauDeJeuAbstrait.cs" caret="149" fromTop="5" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueLabyrinthe.cs" caret="194" fromTop="6" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePlateauDeJeu.cs" caret="0" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePlateauDeJeuAbstrait.cs" caret="0" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:ZoneAbstraite.cs" caret="132" fromTop="5" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:BoutTerrain.cs" caret="105" fromTop="3" />
   </RecentFiles>
   <RecentEdits>
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:AccesAbstrait.cs" caret="334" fromTop="9" />
@@ -42,7 +42,6 @@
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:Fourmiliere.cs" caret="96" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:PlateauDeJeu.cs" caret="0" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:Labyrinthe.cs" caret="0" fromTop="0" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:SimulationJeu.cs" caret="88" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:PlateauDeJeuAbstrait.cs" caret="612" fromTop="14" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Acces.cs" caret="241" fromTop="6" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:EnvironnementDeJeu.cs" caret="0" fromTop="0" />
@@ -58,5 +57,6 @@
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Fantome.cs" caret="0" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowViewModel.cs" caret="1017" fromTop="33" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml" caret="947" fromTop="21" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:SimulationJeu.cs" caret="256" fromTop="9" />
   </RecentEdits>
 </RecentFiles>

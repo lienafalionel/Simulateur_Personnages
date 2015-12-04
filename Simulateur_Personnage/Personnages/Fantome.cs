@@ -3,9 +3,11 @@ namespace Simulateur_Personnage.Personnages
 {
     public class Fantome : Personnage
     {
-        public Fantome()
+        public Fantome(int unId)
+            : base(unId)
         {
-            _comportementCombat = new ComportementAttaque();
+            ComportementCombat = new ComportementAttaque();
+            IdPersonnage = unId;
         }
     }
 }

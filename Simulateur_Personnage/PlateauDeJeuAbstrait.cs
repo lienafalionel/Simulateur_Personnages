@@ -8,7 +8,7 @@ namespace Simulateur_Personnage
     {
         private readonly List<ZoneAbstraite> _zoneList;
         private readonly List<AccesAbstrait> _accesList;
-        private List<Personnage> _personnageList;
+        private readonly List<Personnage> _personnageList;
 
         public PlateauDeJeuAbstrait()
         {

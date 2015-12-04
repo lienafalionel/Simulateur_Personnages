@@ -128,8 +128,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Ressources\" />
+    <Resource Include="Ressources\Pacman\XML.txt" />
+    <Resource Include="Ressources\Pacman\Map PacMan.PNG" />
+    <Resource Include="Ressources\Pacman\Pacman-bleu.jpg" />
+    <Resource Include="Ressources\Pacman\Pacman-rose.jpg" />
+    <Resource Include="Ressources\Pacman\Pacman-rouge.jpg" />
+    <Content Include="Ressources\Pacman\Pacman.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

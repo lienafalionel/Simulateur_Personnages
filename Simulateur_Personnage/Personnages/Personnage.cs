@@ -4,8 +4,13 @@ namespace Simulateur_Personnage.Personnages
 {
     public abstract class Personnage
     {
-        private int _id;
-        public ComportementCombat _comportementCombat { get; set; }
+        public int IdPersonnage { get; set; }
+        public ComportementCombat ComportementCombat { get; set; }
+
+        public Personnage(int unId)
+        {
+
+        }
 
     }
 }

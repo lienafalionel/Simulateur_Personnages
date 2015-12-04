@@ -3,9 +3,11 @@ namespace Simulateur_Personnage.Personnages
 {
     public class PacMan : Personnage
     {
-        public PacMan()
+        public PacMan(int unId)
+            : base(unId)
         {
-            _comportementCombat = new ComportementFuite();
+            ComportementCombat = new ComportementFuite();
+            IdPersonnage = unId;
         }
     }
 }
