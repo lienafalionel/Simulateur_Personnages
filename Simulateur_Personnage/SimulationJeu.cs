@@ -1,4 +1,5 @@
 ﻿using Simulateur_Personnage.Fabrique;
+using Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder;
 
 namespace Simulateur_Personnage
 {
@@ -14,13 +15,13 @@ namespace Simulateur_Personnage
 
         public void CreerFourmiliere()
         {
-            var fabrique = new FabriqueFourmiliere();
+            var fabrique = new FabriqueVols();
             _environnement.CreerPlateauDeJeu(fabrique);
         }
 
         public void CreerLabyrinthe()
         {
-            var fabrique = new FabriqueLabyrinthe();
+            var fabrique = new FabriqueStade();
             _environnement.CreerPlateauDeJeu(fabrique);
         }
 

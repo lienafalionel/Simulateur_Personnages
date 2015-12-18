@@ -2,7 +2,7 @@
 using Simulateur_Personnage.Objets;
 using System.Collections.Generic;
 
-namespace Simulateur_Personnage.Fabrique
+namespace Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder
 {
     public class FabriqueLabyrinthePacMan : FabriquePlateauDeJeuAbstrait
     {

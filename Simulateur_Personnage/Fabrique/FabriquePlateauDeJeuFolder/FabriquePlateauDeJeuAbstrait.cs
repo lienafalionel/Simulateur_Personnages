@@ -2,7 +2,7 @@
 using Simulateur_Personnage.ClassesAbstraites;
 using Simulateur_Personnage.Objets;
 
-namespace Simulateur_Personnage.Fabrique
+namespace Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder
 {
     public abstract class FabriquePlateauDeJeuAbstrait
     {

@@ -1,5 +1,6 @@
 ﻿using Simulateur_Personnage.Comportements;
-namespace Simulateur_Personnage.Personnages
+
+namespace Simulateur_Personnage.Personnages.PacManSimulation
 {
     public class Fantome : Personnage
     {

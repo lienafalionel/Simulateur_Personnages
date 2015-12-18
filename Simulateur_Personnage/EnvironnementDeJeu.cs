@@ -3,8 +3,10 @@ using System.Linq;
 using System.Xml;
 using Simulateur_Personnage.ClassesAbstraites;
 using Simulateur_Personnage.Fabrique;
+using Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder;
 using Simulateur_Personnage.Objets;
 using Simulateur_Personnage.Personnages;
+using Simulateur_Personnage.Personnages.PacManSimulation;
 
 namespace Simulateur_Personnage
 {

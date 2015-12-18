@@ -58,23 +58,27 @@
     <Compile Include="Comportements\ComportementAttaque.cs" />
     <Compile Include="Comportements\ComportementCombat.cs" />
     <Compile Include="Comportements\ComportementFuite.cs" />
-    <Compile Include="Fabrique\FabriqueFantome.cs" />
-    <Compile Include="Fabrique\FabriqueLabyrinthePacMan.cs" />
-    <Compile Include="Fabrique\FabriqueFourmiliere.cs" />
-    <Compile Include="Fabrique\FabriqueLabyrinthe.cs" />
-    <Compile Include="Fabrique\FabriquePacMan.cs" />
-    <Compile Include="Fabrique\FabriquePersonnage.cs" />
-    <Compile Include="Fabrique\FabriquePlateauDeJeu.cs" />
-    <Compile Include="Fourmiliere.cs" />
-    <Compile Include="Labyrinthe.cs" />
+    <Compile Include="Fabrique\FabriquePersonnageFolder\FabriqueAvion.cs" />
+    <Compile Include="Fabrique\FabriquePersonnageFolder\FabriqueFantome.cs" />
+    <Compile Include="Fabrique\FabriquePlateauDeJeuFolder\FabriqueLabyrinthePacMan.cs" />
+    <Compile Include="Fabrique\FabriquePlateauDeJeuFolder\FabriqueVols.cs" />
+    <Compile Include="Fabrique\FabriquePlateauDeJeuFolder\FabriqueStade.cs" />
+    <Compile Include="Fabrique\FabriquePersonnageFolder\FabriquePacMan.cs" />
+    <Compile Include="Fabrique\FabriquePersonnageFolder\FabriquePersonnage.cs" />
+    <Compile Include="Fabrique\FabriquePlateauDeJeuFolder\FabriquePlateauDeJeu.cs" />
+    <Compile Include="Fabrique\FabriquePersonnageFolder\FabriqueSupporteur.cs" />
+    <Compile Include="PlateauVols.cs" />
+    <Compile Include="PlateauStade.cs" />
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Objets\SuperPacGomme.cs" />
     <Compile Include="Objets\PacGomme.cs" />
     <Compile Include="Objets\Objet.cs" />
     <Compile Include="LabyrinthePacMan.cs" />
-    <Compile Include="Personnages\Fantome.cs" />
-    <Compile Include="Personnages\PacMan.cs" />
+    <Compile Include="Personnages\AvionSimulation\Avion.cs" />
+    <Compile Include="Personnages\PacManSimulation\Fantome.cs" />
+    <Compile Include="Personnages\PacManSimulation\PacMan.cs" />
     <Compile Include="Personnages\Personnage.cs" />
+    <Compile Include="Personnages\StadeSimulation\Supporteur.cs" />
     <Compile Include="SimulationJeu.cs" />
     <Compile Include="ClassesAbstraites\Tunnel.cs" />
     <Compile Include="ClassesAbstraites\Zone.cs" />
@@ -93,7 +97,7 @@
     </Compile>
     <Compile Include="ClassesAbstraites\Case.cs" />
     <Compile Include="EnvironnementDeJeu.cs" />
-    <Compile Include="Fabrique\FabriquePlateauDeJeuAbstrait.cs" />
+    <Compile Include="Fabrique\FabriquePlateauDeJeuFolder\FabriquePlateauDeJeuAbstrait.cs" />
     <Compile Include="MainWindowView.xaml.cs">
       <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -119,6 +123,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,6 +138,7 @@
   <ItemGroup>
     <Resource Include="Ressources\Pacman\Pacman.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Resource>
     <Resource Include="Ressources\Pacman\Map PacMan.PNG" />
     <Resource Include="Ressources\Pacman\Pacman-bleu.jpg" />

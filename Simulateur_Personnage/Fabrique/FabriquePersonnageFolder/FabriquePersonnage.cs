@@ -1,6 +1,6 @@
 ﻿using Simulateur_Personnage.Personnages;
 
-namespace Simulateur_Personnage.Fabrique
+namespace Simulateur_Personnage.Fabrique.FabriquePersonnageFolder
 {
     public abstract class FabriquePersonnage
     {
