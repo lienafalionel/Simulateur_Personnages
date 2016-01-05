@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Simulateur_Personnage.ClassesAbstraites;
 using Simulateur_Personnage.Objets;
+using Simulateur_Personnage.Personnages;
 
 namespace Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder
 {
@@ -21,6 +22,14 @@ namespace Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder
         {
             return new Adjacent(id, uneZoneOrigine, uneZoneDestination);
         }
+
         //FIN TODO
+
+        public override void LireXml(out List<ZoneAbstraite> listZone, out List<AccesAbstrait> listAcces, out List<Personnage> listPersonnage)
+        {
+            listZone = null;
+            listAcces = null;
+            listPersonnage = null;
+        }
     }
 }
