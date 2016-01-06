@@ -56,15 +56,18 @@ namespace Simulateur_Personnage
                         {
                             if (objet is PacGomme)
                             {
-                                image.Source = new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\point.png", UriKind.Relative));
+                                image.Source =
+                                    new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\point.png", UriKind.Relative));
                             }
                             if (objet is SuperPacGomme)
                             {
-                                image.Source = new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\pomme.png", UriKind.Relative));
+                                image.Source =
+                                    new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\pomme.png", UriKind.Relative));
                             }
                             if (objet is Porte)
                             {
-                                image.Source = new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\porte.png", UriKind.Relative));
+                                image.Source =
+                                    new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\porte.png", UriKind.Relative));
                             }
                             if (objet == null)
                             {
@@ -81,13 +84,14 @@ namespace Simulateur_Personnage
                         childrenGrid.Children.Add(border);
                     }
 
-                    foreach (var personnage in _plateauDeJeu.PersonnageList)
+                    if (_plateauDeJeu.PersonnageList.Any(a => a.ZoneAbstraite.PositionX == x && a.ZoneAbstraite.PositionY == y))
                     {
-                        if (personnage.ZoneAbstraite.PositionX == x && personnage.ZoneAbstraite.PositionY == y)
+                        var personnage = _plateauDeJeu.PersonnageList.FirstOrDefault(a => a.ZoneAbstraite.PositionX == x && a.ZoneAbstraite.PositionY == y);
                         {
                             if (personnage is PacMan)
                             {
-                                image.Source = new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman.png", UriKind.Relative));
+                                image.Source =
+                                    new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman.png", UriKind.Relative));
                                 myBrush.ImageSource = image.Source;
                                 border.Background = myBrush;
                             }
