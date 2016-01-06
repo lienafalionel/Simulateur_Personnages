@@ -1,4 +1,5 @@
-﻿using Simulateur_Personnage.Comportements;
+﻿using Simulateur_Personnage.ClassesAbstraites;
+using Simulateur_Personnage.Comportements;
 
 namespace Simulateur_Personnage.Personnages
 {
@@ -6,6 +7,7 @@ namespace Simulateur_Personnage.Personnages
     {
         public int IdPersonnage { get; set; }
         public ComportementCombat ComportementCombat { get; set; }
+        public ZoneAbstraite ZoneAbstraite { get; set; }
 
         public Personnage(int unId)
         {

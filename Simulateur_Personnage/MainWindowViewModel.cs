@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Xml;
 using Simulateur_Personnage.ClassesAbstraites;
@@ -36,8 +37,11 @@ namespace Simulateur_Personnage
 
         private void SimulationPacManExecuteCommand()
         {
+            Grid grid;
             var simulateur = new SimulationJeu();
-            simulateur.CreerPacMan();
+            simulateur.CreerPacMan(out grid);
+
+            EventAggregatorClass.EventAggregator.GetEvent<EventAggregatorLoadMapEvent>().Publish(grid); ;
         }
 
         #endregion

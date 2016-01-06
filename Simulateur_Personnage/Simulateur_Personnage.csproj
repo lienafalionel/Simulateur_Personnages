@@ -34,6 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Composite, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft_Composite_library_package.1.0.0\lib\Microsoft.Practices.Composite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite.Presentation, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft_Composite_library_package.1.0.0\lib\Microsoft.Practices.Composite.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -67,6 +75,7 @@
     <Compile Include="Fabrique\FabriquePersonnageFolder\FabriquePersonnage.cs" />
     <Compile Include="Fabrique\FabriquePlateauDeJeuFolder\FabriquePlateauDeJeu.cs" />
     <Compile Include="Fabrique\FabriquePersonnageFolder\FabriqueSupporteur.cs" />
+    <Compile Include="Objets\Porte.cs" />
     <Compile Include="PlateauVols.cs" />
     <Compile Include="PlateauStade.cs" />
     <Compile Include="MainWindowViewModel.cs" />
@@ -84,6 +93,7 @@
     <Compile Include="ClassesAbstraites\Zone.cs" />
     <Compile Include="ClassesAbstraites\ZoneAbstraite.cs" />
     <Compile Include="Utilities\BooleanConverter.cs" />
+    <Compile Include="Utilities\EventAggregatorClass.cs" />
     <Compile Include="Utilities\RelayCommand.cs" />
     <Page Include="MainWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -123,6 +133,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -134,15 +145,37 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Resource Include="Ressources\Pacman\porte.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Pacman\pomme.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Pacman\point.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Ressources\Pacman\Pacman.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Resource>
-    <Resource Include="Ressources\Pacman\Map PacMan.PNG" />
-    <Resource Include="Ressources\Pacman\Pacman-bleu.jpg" />
-    <Resource Include="Ressources\Pacman\Pacman-rose.jpg" />
-    <Resource Include="Ressources\Pacman\Pacman-rouge.jpg" />
-    <Content Include="Ressources\Pacman\Pacman.svg" />
+    <Resource Include="Ressources\Pacman\Map PacMan.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Ressources\Pacman\blackbox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Ressources\Pacman\Pacman-bleu.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\Pacman\Pacman-rose.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\Pacman\Pacman-rouge.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\Pacman\Pacman.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

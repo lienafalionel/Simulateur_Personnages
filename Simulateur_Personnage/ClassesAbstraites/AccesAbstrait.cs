@@ -3,14 +3,14 @@
     public abstract class AccesAbstrait
     {
         private int _id;
-        private ZoneAbstraite _zoneOrigine;
-        private ZoneAbstraite _zoneDestination;
+        public ZoneAbstraite ZoneOrigine { get; set; }
+        public ZoneAbstraite ZoneDestination { get; set; }
 
         public AccesAbstrait(int id, ZoneAbstraite uneZoneOrigine, ZoneAbstraite uneZoneDestination)
         {
             _id = id;
-            _zoneOrigine = uneZoneOrigine;
-            _zoneDestination = uneZoneDestination;
+            ZoneOrigine = uneZoneOrigine;
+            ZoneDestination = uneZoneDestination;
         }
     }
 }

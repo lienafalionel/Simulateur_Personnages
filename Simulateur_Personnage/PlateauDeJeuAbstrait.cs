@@ -7,19 +7,19 @@ namespace Simulateur_Personnage
     public abstract class PlateauDeJeuAbstrait
     {
         public readonly List<ZoneAbstraite> ZoneList;
-        private readonly List<AccesAbstrait> _accesList;
-        private readonly List<Personnage> _personnageList;
+        public readonly List<AccesAbstrait> AccesList;
+        public readonly List<Personnage> PersonnageList;
 
         public PlateauDeJeuAbstrait()
         {
             ZoneList = new List<ZoneAbstraite>();
-            _accesList = new List<AccesAbstrait>();
-            _personnageList = new List<Personnage>();
+            AccesList = new List<AccesAbstrait>();
+            PersonnageList = new List<Personnage>();
         }
 
         public void AjouteAcces(AccesAbstrait accesAbstrait)
         {
-            _accesList.Add(accesAbstrait);
+            AccesList.Add(accesAbstrait);
         }
 
         public void AjouteZone(ZoneAbstraite zoneAbstraite)
@@ -29,7 +29,7 @@ namespace Simulateur_Personnage
 
         public void AjoutePersonnage(Personnage personnage)
         {
-            _personnageList.Add(personnage);
+            PersonnageList.Add(personnage);
         }
     }
 }

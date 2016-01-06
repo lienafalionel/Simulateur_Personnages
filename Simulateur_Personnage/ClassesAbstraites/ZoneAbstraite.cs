@@ -6,29 +6,39 @@ namespace Simulateur_Personnage.ClassesAbstraites
     public abstract class ZoneAbstraite
     {
         public int Id;
-        private List<Objet> _objetList;
-        private List<Personnage> _personnageList;
-        private int _positionX;
-        private int _positionY;
+        public List<Objet> ObjetList { get; set; }
+        public List<Personnage> PersonnageList { get; set; }
+        public int PositionX { get; set; }
+        public int PositionY { get; set; }
 
         private static int MAX_ID = 0;
 
         public ZoneAbstraite(int unId, int unePositionX, int unePositionY, List<Objet> listObjets)
         {
             Id = unId;
-            _objetList = listObjets;
-            _personnageList = new List<Personnage>();
-            _positionX = unePositionX;
-            _positionY = unePositionY;
+            ObjetList = listObjets;
+            PersonnageList = new List<Personnage>();
+            PositionX = unePositionX;
+            PositionY = unePositionY;
         }
 
         public ZoneAbstraite(int unePositionX, int unePositionY)
         {
             Id = MAX_ID + 1;
-            _objetList = new List<Objet>();
-            _personnageList = new List<Personnage>();
-            _positionX = unePositionX;
-            _positionY = unePositionY;
+            ObjetList = new List<Objet>();
+            PersonnageList = new List<Personnage>();
+            PositionX = unePositionX;
+            PositionY = unePositionY;
+        }
+
+        public bool HasObject
+        {
+            get { return ObjetList.Count > 0; }
+        }
+
+        public bool HasPersonnage
+        {
+            get { return PersonnageList.Count > 0; }
         }
     }
 }

@@ -67,6 +67,9 @@ namespace Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder
                             case "BONUS":
                                 objet = new SuperPacGomme();
                                 break;
+                            case "PORTE":
+                                objet = new Porte();
+                                break;
                         }
 
                         listZone.Add(new Zone(id, positionX, positionY, new List<Objet> { objet }));
@@ -122,6 +125,8 @@ namespace Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder
                                 personnage = new PacMan(id);
                                 break;
                         }
+
+                        if (personnage != null) personnage.ZoneAbstraite = listZone.First(a => a.Id == position);
 
                         listPersonnage.Add(personnage);
                     }

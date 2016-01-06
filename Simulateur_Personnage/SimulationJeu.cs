@@ -1,4 +1,5 @@
-﻿using Simulateur_Personnage.Fabrique;
+﻿using System.Windows.Controls;
+using Simulateur_Personnage.Fabrique;
 using Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder;
 
 namespace Simulateur_Personnage
@@ -25,10 +26,11 @@ namespace Simulateur_Personnage
             _environnement.CreerPlateauDeJeu(fabrique);
         }
 
-        public void CreerPacMan()
+        public void CreerPacMan(out Grid grid)
         {
             var fabrique = new FabriqueLabyrinthePacMan();
             _environnement.CreerPlateauDeJeu(fabrique);
+            grid = _environnement.CreerTerrain();
         }
     }
 }
