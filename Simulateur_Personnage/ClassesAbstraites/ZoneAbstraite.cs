@@ -1,15 +1,28 @@
-﻿using Simulateur_Personnage.Objets;
+﻿using System.ComponentModel;
+using System.Windows.Media;
+using Simulateur_Personnage.Objets;
 using Simulateur_Personnage.Personnages;
 using System.Collections.Generic;
 namespace Simulateur_Personnage.ClassesAbstraites
 {
-    public abstract class ZoneAbstraite
+    public abstract class ZoneAbstraite : INotifyPropertyChanged
     {
         public int Id;
         public List<Objet> ObjetList { get; set; }
         public List<Personnage> PersonnageList { get; set; }
         public int PositionX { get; set; }
         public int PositionY { get; set; }
+
+        private ImageBrush _image;
+        public ImageBrush Image
+        {
+            get { return _image; }
+            set
+            {
+                _image = value;
+                OnPropertyChanged("Image");
+            }
+        }
 
         private static int MAX_ID = 0;
 
@@ -39,6 +52,14 @@ namespace Simulateur_Personnage.ClassesAbstraites
         public bool HasPersonnage
         {
             get { return PersonnageList.Count > 0; }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

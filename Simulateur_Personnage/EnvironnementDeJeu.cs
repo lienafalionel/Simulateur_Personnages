@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Simulateur_Personnage.ClassesAbstraites;
@@ -35,6 +36,7 @@ namespace Simulateur_Personnage
         public Grid CreerTerrain()
         {
             var grid = new Grid();
+
             for (int x = 0; x < 17; x++)
                 grid.ColumnDefinitions.Add(new ColumnDefinition());
             for (int y = 0; y < 20; y++)
@@ -44,37 +46,25 @@ namespace Simulateur_Personnage
                 for (int y = 0; y < 17; y++)
                 {
                     var childrenGrid = new Grid();
-
                     var border = new Border();
-                    var myBrush = new ImageBrush();
-                    var image = new Image();
 
                     if (_plateauDeJeu.ZoneList.Exists(a => a.PositionX == x && a.PositionY == y))
                     {
                         var zone = _plateauDeJeu.ZoneList.First(a => a.PositionX == x && a.PositionY == y);
+
+                        childrenGrid.DataContext = zone;
+
                         foreach (var objet in zone.ObjetList)
                         {
+                            var binding = new Binding("Image");
+                            border.SetBinding(Border.BackgroundProperty, binding);
+
                             if (objet is PacGomme)
-                            {
-                                image.Source =
-                                    new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\point.png", UriKind.Relative));
-                            }
+                                zone.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\point.png", UriKind.Relative)));
                             if (objet is SuperPacGomme)
-                            {
-                                image.Source =
-                                    new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\pomme.png", UriKind.Relative));
-                            }
+                                zone.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\pomme.png", UriKind.Relative)));
                             if (objet is Porte)
-                            {
-                                image.Source =
-                                    new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\porte.png", UriKind.Relative));
-                            }
-                            if (objet == null)
-                            {
-                                //border.Background = new SolidColorBrush(Colors.Black);
-                            }
-                            myBrush.ImageSource = image.Source;
-                            border.Background = myBrush;
+                                zone.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\porte.png", UriKind.Relative)));
                         }
                         childrenGrid.Children.Add(border);
                     }
@@ -86,15 +76,11 @@ namespace Simulateur_Personnage
 
                     if (_plateauDeJeu.PersonnageList.Any(a => a.ZoneAbstraite.PositionX == x && a.ZoneAbstraite.PositionY == y))
                     {
+                        var zone = _plateauDeJeu.ZoneList.First(a => a.PositionX == x && a.PositionY == y);
                         var personnage = _plateauDeJeu.PersonnageList.FirstOrDefault(a => a.ZoneAbstraite.PositionX == x && a.ZoneAbstraite.PositionY == y);
                         {
                             if (personnage is PacMan)
-                            {
-                                image.Source =
-                                    new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman.png", UriKind.Relative));
-                                myBrush.ImageSource = image.Source;
-                                border.Background = myBrush;
-                            }
+                                zone.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman.png", UriKind.Relative)));
                             if (personnage is Fantome)
                             {
                                 var random = new Random();
@@ -102,17 +88,15 @@ namespace Simulateur_Personnage
                                 switch (res)
                                 {
                                     case 1:
-                                        image.Source = new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-bleu.png", UriKind.Relative));
+                                        zone.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-bleu.png", UriKind.Relative)));
                                         break;
                                     case 2:
-                                        image.Source = new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-rose.png", UriKind.Relative));
+                                        zone.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-rose.png", UriKind.Relative)));
                                         break;
                                     case 3:
-                                        image.Source = new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-rouge.png", UriKind.Relative));
+                                        zone.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-rouge.png", UriKind.Relative)));
                                         break;
                                 }
-                                myBrush.ImageSource = image.Source;
-                                border.Background = myBrush;
                             }
                         }
                     }
