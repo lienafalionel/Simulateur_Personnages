@@ -8,6 +8,7 @@ namespace Simulateur_Personnage.Personnages
         public int IdPersonnage { get; set; }
         public ComportementCombat ComportementCombat { get; set; }
         public ZoneAbstraite ZoneAbstraite { get; set; }
+        public ZoneAbstraite LastPosition { get; set; }
 
         public Personnage(int unId)
         {

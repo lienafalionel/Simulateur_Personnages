@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Resource Include="Ressources\Pacman\r2d2.png" />
     <Resource Include="Ressources\Pacman\porte.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

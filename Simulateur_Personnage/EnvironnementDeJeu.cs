@@ -30,6 +30,7 @@ namespace Simulateur_Personnage
             listAcces.ForEach(a => _plateauDeJeu.AjouteAcces(a));
             listPersonnage.ForEach(a => _plateauDeJeu.AjoutePersonnage(a));
 
+
             return _plateauDeJeu;
         }
 

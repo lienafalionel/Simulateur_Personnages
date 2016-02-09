@@ -1,35 +1,24 @@
 ﻿<RecentFiles>
   <RecentFiles>
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Comportements/f:ComportementCombat.cs" caret="156" fromTop="6" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Fantome.cs" caret="323" fromTop="12" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Personnage.cs" caret="0" fromTop="0" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml" caret="805" fromTop="26" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:PacMan.cs" caret="298" fromTop="9" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Ressources/d:Pacman/f:Pacman.svg" caret="0" fromTop="0" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Zone.cs" caret="239" fromTop="7" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:BoutTerrain.cs" caret="342" fromTop="8" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePacMan.cs" caret="148" fromTop="5" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Case.cs" caret="326" fromTop="7" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePersonnage.cs" caret="0" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Objets/f:Objet.cs" caret="81" fromTop="3" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Objets/f:PacGomme.cs" caret="85" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Objets/f:SuperPacGomme.cs" caret="90" fromTop="4" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueFantome.cs" caret="114" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:SimulationJeu.cs" caret="874" fromTop="20" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:ZoneAbstraite.cs" caret="353" fromTop="10" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Acces.cs" caret="82" fromTop="2" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:AccesAbstrait.cs" caret="80" fromTop="2" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePlateauDeJeuAbstrait.cs" caret="485" fromTop="12" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueLabyrinthePacMan.cs" caret="767" fromTop="17" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePlateauDeJeu.cs" caret="221" fromTop="3" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Tunnel.cs" caret="88" fromTop="2" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Adjacent.cs" caret="224" fromTop="5" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueFourmiliere.cs" caret="357" fromTop="9" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueLabyrinthe.cs" caret="498" fromTop="13" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:EnvironnementDeJeu.cs" caret="1999" fromTop="13" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:PlateauDeJeuAbstrait.cs" caret="253" fromTop="8" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Ressources/d:Pacman/f:Pacman.xml" caret="46902" fromTop="5" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowViewModel.cs" caret="1137" fromTop="11" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowView.xaml" caret="629" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Zone.cs" caret="0" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowViewModel.cs" caret="1327" fromTop="10" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:ZoneAbstraite.cs" caret="674" fromTop="14" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:EnvironnementDeJeu.cs" caret="5056" fromTop="24" />
   </RecentFiles>
   <RecentEdits>
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:SimulationJeu.cs" caret="256" fromTop="9" />
@@ -37,11 +26,6 @@
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Comportements/f:ComportementFuite.cs" caret="13" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Comportements/f:ComportementAttaque.cs" caret="13" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Personnage.cs" caret="170" fromTop="6" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:Fantome.cs" caret="302" fromTop="9" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Personnages/f:PacMan.cs" caret="298" fromTop="9" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePacMan.cs" caret="257" fromTop="8" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePersonnage.cs" caret="201" fromTop="6" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueFantome.cs" caret="40" fromTop="0" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Zone.cs" caret="328" fromTop="8" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:BoutTerrain.cs" caret="342" fromTop="8" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Case.cs" caret="326" fromTop="7" />
@@ -50,17 +34,12 @@
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Objets/f:SuperPacGomme.cs" caret="90" fromTop="4" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:MainWindowViewModel.cs" caret="1137" fromTop="11" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:PlateauDeJeuAbstrait.cs" caret="264" fromTop="6" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:ZoneAbstraite.cs" caret="236" fromTop="7" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Acces.cs" caret="218" fromTop="5" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:AccesAbstrait.cs" caret="358" fromTop="10" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Tunnel.cs" caret="212" fromTop="5" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:Adjacent.cs" caret="224" fromTop="5" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePlateauDeJeu.cs" caret="759" fromTop="17" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriquePlateauDeJeuAbstrait.cs" caret="478" fromTop="12" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueLabyrinthePacMan.cs" caret="767" fromTop="17" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueLabyrinthe.cs" caret="758" fromTop="20" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Fabrique/f:FabriqueFourmiliere.cs" caret="765" fromTop="20" />
-    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:EnvironnementDeJeu.cs" caret="4620" fromTop="2" />
     <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:Ressources/d:Pacman/f:Pacman.xml" caret="1" fromTop="0" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/d:ClassesAbstraites/f:ZoneAbstraite.cs" caret="707" fromTop="15" />
+    <File id="66DC3D6E-23B1-4A9C-961D-7001DB8B128B/f:EnvironnementDeJeu.cs" caret="3907" fromTop="17" />
   </RecentEdits>
 </RecentFiles>

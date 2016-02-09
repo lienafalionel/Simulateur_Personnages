@@ -1,29 +1,33 @@
-﻿using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Xml;
-using Simulateur_Personnage.ClassesAbstraites;
-using Simulateur_Personnage.Objets;
 using Simulateur_Personnage.Utilities;
 
 namespace Simulateur_Personnage
 {
     public class MainWindowViewModel : IMainWindowViewModel
     {
+        private readonly SimulationJeu _simulateur;
+
         public MainWindowViewModel()
         {
             InitializeCommand();
+            _simulateur = new SimulationJeu();
         }
 
+        private SimulationEnum _actualSimulation;
+
         #region ICommands
+
         public ICommand QuitCommand { get; set; }
         public ICommand SimulationPacManCommand { get; set; }
+        public ICommand StartCommand { get; set; }
 
         private void InitializeCommand()
         {
             QuitCommand = new RelayCommand(QuitExecuteCommand);
             SimulationPacManCommand = new RelayCommand(SimulationPacManExecuteCommand);
+            StartCommand = new RelayCommand(StartExecuteCommand);
         }
 
         #endregion
@@ -37,14 +41,31 @@ namespace Simulateur_Personnage
 
         private void SimulationPacManExecuteCommand()
         {
+            _actualSimulation = SimulationEnum.Pacman;
             Grid grid;
-            var simulateur = new SimulationJeu();
-            simulateur.CreerPacMan(out grid);
+            _simulateur.CreerPacMan(out grid);
 
-            EventAggregatorClass.EventAggregator.GetEvent<EventAggregatorLoadMapEvent>().Publish(grid); ;
+            EventAggregatorClass.EventAggregator.GetEvent<EventAggregatorLoadMapEvent>().Publish(grid);
+            ;
         }
 
+        private void StartExecuteCommand()
+        {
+            switch (_actualSimulation)
+            {
+                case SimulationEnum.Pacman:
+                    _simulateur.LancerPacMan();
+                    break;
+
+                case SimulationEnum.Avion:
+                    break;
+
+                case SimulationEnum.Stade:
+                    break;
+            }
+
         #endregion
+        }
     }
 
     public class DesignMainWindowViewModel
@@ -59,5 +80,13 @@ namespace Simulateur_Personnage
     {
         ICommand QuitCommand { get; set; }
         ICommand SimulationPacManCommand { get; set; }
+        ICommand StartCommand { get; set; }
+    }
+
+    public enum SimulationEnum
+    {
+        Pacman = 1,
+        Stade = 2,
+        Avion = 3
     }
 }

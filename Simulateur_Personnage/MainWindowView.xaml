@@ -38,6 +38,13 @@
                     Header="Quitter"
                     Command="{Binding Path=QuitCommand}"></MenuItem>
             </MenuItem>
+            <MenuItem Header="Actions">
+                <MenuItem
+                    Header="Lancer"
+                    Command="{Binding Path=StartCommand}"/>
+                <MenuItem
+                    Header="Arreter" />
+            </MenuItem>
             <MenuItem
                 Header="?">
                 <MenuItem
