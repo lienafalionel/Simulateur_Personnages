@@ -16,6 +16,7 @@ namespace Simulateur_Personnage
 {
     public class SimulationJeu
     {
+        public bool ShouldStopThread = false;
         private readonly EnvironnementDeJeu _environnement = new EnvironnementDeJeu();
         private PlateauDeJeuAbstrait _plateauDeJeuAbstrait;
 
@@ -49,7 +50,7 @@ namespace Simulateur_Personnage
             var returnValue = "";
             var thread = new Thread(() =>
                                         {
-                                            while (returnValue != "PERDU")
+                                            while (returnValue != "PERDU" && !ShouldStopThread)
                                             {
                                                 foreach (var personnage in _plateauDeJeuAbstrait.PersonnageList)
                                                 {
@@ -62,7 +63,6 @@ namespace Simulateur_Personnage
                                                         (Action)
                                                         (() =>
                                                              {
-                                                                 //returnValue = personnage1.ComportementCombat.Combattre(personnage1, _plateauDeJeuAbstrait);
                                                                  returnValue = personnage1.Combattre();
                                                              }));
 
@@ -70,6 +70,7 @@ namespace Simulateur_Personnage
                                                 }
                                             }
 
+                                            ShouldStopThread = false;
                                             if (returnValue == "PERDU")
                                                 MessageBox.Show("PERDU!");
                                         });

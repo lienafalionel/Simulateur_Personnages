@@ -12,6 +12,5 @@ namespace Simulateur_Personnage.Comportements
         }
 
         public abstract string Combattre();
-
     }
 }

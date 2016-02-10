@@ -1,19 +1,17 @@
 ﻿using Simulateur_Personnage.Personnages;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace Simulateur_Personnage.Comportements.Pacman
 {
-    class ComportementPacManAttaque : ComportementCombat
+    public class ComportementPacManAttaque : ComportementCombat
     {
         private int _numberOfTour;
 
-        public ComportementPacManAttaque(Personnage unPersonnage) : base(unPersonnage)
+        public ComportementPacManAttaque(Personnage unPersonnage)
+            : base(unPersonnage)
         {
             _numberOfTour = 0;
         }

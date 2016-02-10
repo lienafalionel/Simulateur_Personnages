@@ -29,21 +29,26 @@
                         Header="Pac-Man"
                         Command="{Binding Path=SimulationPacManCommand}"></MenuItem>
                     <MenuItem
-                        Header="Fourmiliere"></MenuItem>
+                        Header="Simulateur d'avion"
+                        IsEnabled="False"></MenuItem>
                     <MenuItem
-                        Header="Plateau de Jeu"></MenuItem>
+                        Header="Simulateur de stade"
+                        IsEnabled="False"></MenuItem>
                 </MenuItem>
                 <Separator />
                 <MenuItem
                     Header="Quitter"
                     Command="{Binding Path=QuitCommand}"></MenuItem>
             </MenuItem>
-            <MenuItem Header="Actions">
+            <MenuItem
+                Header="Actions">
                 <MenuItem
                     Header="Lancer"
-                    Command="{Binding Path=StartCommand}"/>
+                    Command="{Binding Path=StartCommand}"
+                    IsEnabled="{Binding Path=IsEnabledStartCommand}" />
                 <MenuItem
-                    Header="Arreter" />
+                    Header="Arreter"
+                    Command="{Binding Path=StopCommand}" />
             </MenuItem>
             <MenuItem
                 Header="?">

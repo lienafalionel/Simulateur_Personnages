@@ -2,18 +2,16 @@
 using Simulateur_Personnage.Personnages;
 using Simulateur_Personnage.Personnages.PacManSimulation;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace Simulateur_Personnage.Comportements.Pacman
 {
-    class ComportementFantomeAttaque : ComportementCombat
+    public class ComportementFantomeAttaque : ComportementCombat
     {
-        public ComportementFantomeAttaque(Personnage unPersonnage) : base(unPersonnage)
+        public ComportementFantomeAttaque(Personnage unPersonnage)
+            : base(unPersonnage)
         {
 
         }
@@ -32,7 +30,9 @@ namespace Simulateur_Personnage.Comportements.Pacman
             var random = new Random();
             var res = random.Next(0, accesDisponibles.Count);
 
-            if (accesDisponibles.Count == 1 && accesDisponibles.First().ZoneOrigine.PersonnageList.Exists(a => a is Fantome) && accesDisponibles.First().ZoneDestination.PersonnageList.Exists(a => a is Fantome))
+            if (accesDisponibles.Count == 1 && accesDisponibles.First().ZoneOrigine.PersonnageList.Exists(a => a is Fantome)
+                && accesDisponibles.First().ZoneDestination.PersonnageList.Exists(a => a is Fantome)
+                && (accesDisponibles.First().ZoneOrigine.Id == 81 || accesDisponibles.First().ZoneDestination.Id == 81))
                 return "";
 
             Personnage.ZoneAbstraite.Image = null;
@@ -52,7 +52,7 @@ namespace Simulateur_Personnage.Comportements.Pacman
 
 
             Personnage.ZoneAbstraite.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-bleu.png", UriKind.Relative)));
-       
+
             return "";
         }
     }

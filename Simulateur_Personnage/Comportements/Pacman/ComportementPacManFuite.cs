@@ -2,19 +2,16 @@
 using Simulateur_Personnage.Personnages;
 using Simulateur_Personnage.Personnages.PacManSimulation;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace Simulateur_Personnage.Comportements.Pacman
 {
-    class ComportementPacManFuite : ComportementCombat
+    public class ComportementPacManFuite : ComportementCombat
     {
-
-        public ComportementPacManFuite(Personnage unPersonnage) : base(unPersonnage)
+        public ComportementPacManFuite(Personnage unPersonnage)
+            : base(unPersonnage)
         {
 
         }

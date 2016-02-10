@@ -1,11 +1,12 @@
-﻿using System.Windows;
+﻿using System.ComponentModel;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using Simulateur_Personnage.Utilities;
 
 namespace Simulateur_Personnage
 {
-    public class MainWindowViewModel : IMainWindowViewModel
+    public class MainWindowViewModel : IMainWindowViewModel, INotifyPropertyChanged
     {
         private readonly SimulationJeu _simulateur;
 
@@ -22,12 +23,14 @@ namespace Simulateur_Personnage
         public ICommand QuitCommand { get; set; }
         public ICommand SimulationPacManCommand { get; set; }
         public ICommand StartCommand { get; set; }
+        public ICommand StopCommand { get; set; }
 
         private void InitializeCommand()
         {
             QuitCommand = new RelayCommand(QuitExecuteCommand);
             SimulationPacManCommand = new RelayCommand(SimulationPacManExecuteCommand);
             StartCommand = new RelayCommand(StartExecuteCommand);
+            StopCommand = new RelayCommand(StopExecuteCommand);
         }
 
         #endregion
@@ -46,7 +49,7 @@ namespace Simulateur_Personnage
             _simulateur.CreerPacMan(out grid);
 
             EventAggregatorClass.EventAggregator.GetEvent<EventAggregatorLoadMapEvent>().Publish(grid);
-            ;
+            IsEnabledStartCommand = true;
         }
 
         private void StartExecuteCommand()
@@ -63,9 +66,34 @@ namespace Simulateur_Personnage
                 case SimulationEnum.Stade:
                     break;
             }
-
-        #endregion
         }
+
+        private void StopExecuteCommand()
+        {
+            _simulateur.ShouldStopThread = true;
+        }
+        #endregion
+
+        private bool _isEnabledStartCommand;
+        public bool IsEnabledStartCommand
+        {
+            get { return _isEnabledStartCommand; }
+            set
+            {
+                _isEnabledStartCommand = value;
+                OnPropertyChanged("IsEnabledStartCommand");
+            }
+        }
+
+        #region INotifyPropertChanged implementation
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
+        }
+        #endregion
     }
 
     public class DesignMainWindowViewModel
