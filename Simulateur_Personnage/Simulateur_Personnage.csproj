@@ -66,6 +66,10 @@
     <Compile Include="Comportements\ComportementAttaque.cs" />
     <Compile Include="Comportements\ComportementCombat.cs" />
     <Compile Include="Comportements\ComportementFuite.cs" />
+    <Compile Include="Comportements\Pacman\ComportementFantomeAttaque.cs" />
+    <Compile Include="Comportements\Pacman\ComportementFantomeFuite.cs" />
+    <Compile Include="Comportements\Pacman\ComportementPacManFuite.cs" />
+    <Compile Include="Comportements\Pacman\ComportementPacManAttaque.cs" />
     <Compile Include="Fabrique\FabriquePersonnageFolder\FabriqueAvion.cs" />
     <Compile Include="Fabrique\FabriquePersonnageFolder\FabriqueFantome.cs" />
     <Compile Include="Fabrique\FabriquePlateauDeJeuFolder\FabriqueLabyrinthePacMan.cs" />
@@ -76,13 +80,13 @@
     <Compile Include="Fabrique\FabriquePlateauDeJeuFolder\FabriquePlateauDeJeu.cs" />
     <Compile Include="Fabrique\FabriquePersonnageFolder\FabriqueSupporteur.cs" />
     <Compile Include="Objets\Porte.cs" />
-    <Compile Include="PlateauVols.cs" />
-    <Compile Include="PlateauStade.cs" />
+    <Compile Include="PlateauDeJeuVols.cs" />
+    <Compile Include="PlateauDeJeuStade.cs" />
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Objets\SuperPacGomme.cs" />
     <Compile Include="Objets\PacGomme.cs" />
     <Compile Include="Objets\Objet.cs" />
-    <Compile Include="LabyrinthePacMan.cs" />
+    <Compile Include="PlateauDeJeuPacMan.cs" />
     <Compile Include="Personnages\AvionSimulation\Avion.cs" />
     <Compile Include="Personnages\PacManSimulation\Fantome.cs" />
     <Compile Include="Personnages\PacManSimulation\PacMan.cs" />

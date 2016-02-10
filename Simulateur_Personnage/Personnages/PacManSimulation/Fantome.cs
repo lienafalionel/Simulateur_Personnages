@@ -1,4 +1,5 @@
 ﻿using Simulateur_Personnage.Comportements;
+using Simulateur_Personnage.Comportements.Pacman;
 
 namespace Simulateur_Personnage.Personnages.PacManSimulation
 {
@@ -7,7 +8,7 @@ namespace Simulateur_Personnage.Personnages.PacManSimulation
         public Fantome(int unId)
             : base(unId)
         {
-            ComportementCombat = new ComportementAttaque();
+            ComportementCombat = new ComportementFantomeAttaque(this);
             IdPersonnage = unId;
         }
     }

@@ -4,6 +4,14 @@ namespace Simulateur_Personnage.Comportements
 {
     public abstract class ComportementCombat
     {
-        public abstract string Combattre(Personnage personnage, PlateauDeJeuAbstrait plateauDeJeuAbstrait);
+        public Personnage Personnage { get; set; }
+
+        public ComportementCombat(Personnage unPersonnage)
+        {
+            Personnage = unPersonnage;
+        }
+
+        public abstract string Combattre();
+
     }
 }

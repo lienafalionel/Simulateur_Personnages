@@ -12,7 +12,7 @@ namespace Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder
     {
         public override PlateauDeJeuAbstrait CreerPlateauDeJeu()
         {
-            return new LabyrinthePacMan();
+            return new PlateauDeJeuPacMan();
         }
 
         public override ZoneAbstraite CreerZone(int unId, int unePositionX, int unePositionY, List<Objet> listObjets)

@@ -15,5 +15,10 @@ namespace Simulateur_Personnage.Personnages
 
         }
 
+        public string Combattre()
+        {
+            return ComportementCombat.Combattre();
+        }
+
     }
 }

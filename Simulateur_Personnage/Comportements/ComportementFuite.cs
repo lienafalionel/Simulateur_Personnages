@@ -11,48 +11,55 @@ namespace Simulateur_Personnage.Comportements
 {
     public class ComportementFuite : ComportementCombat
     {
-        public override string Combattre(Personnage personnage, PlateauDeJeuAbstrait plateauDeJeuAbstrait)
-        {
-            var accesDisponibles = plateauDeJeuAbstrait.AccesList.Where(
-                 a => a.ZoneDestination == personnage.ZoneAbstraite || a.ZoneOrigine == personnage.ZoneAbstraite).ToList();
 
-            if (accesDisponibles.Count > 1 && accesDisponibles.Exists(a => a.ZoneDestination == personnage.LastPosition || a.ZoneOrigine == personnage.LastPosition))
+        public ComportementFuite(Personnage unPersonnage)
+            : base(unPersonnage)
+        {
+
+        }
+
+        public override string Combattre()
+        {
+            var accesDisponibles = PlateauDeJeuPacMan.Instance().AccesList.Where(
+                 a => a.ZoneDestination == Personnage.ZoneAbstraite || a.ZoneOrigine == Personnage.ZoneAbstraite).ToList();
+
+            if (accesDisponibles.Count > 1 && accesDisponibles.Exists(a => a.ZoneDestination == Personnage.LastPosition || a.ZoneOrigine == Personnage.LastPosition))
             {
                 accesDisponibles.RemoveAll(
-                    a => a.ZoneDestination == personnage.LastPosition || a.ZoneOrigine == personnage.LastPosition);
+                    a => a.ZoneDestination == Personnage.LastPosition || a.ZoneOrigine == Personnage.LastPosition);
             }
 
             var random = new Random();
             var res = random.Next(0, accesDisponibles.Count);
-            personnage.ZoneAbstraite.Image = null;
-            personnage.LastPosition = personnage.ZoneAbstraite;
-            personnage.LastPosition.PersonnageList.Remove(personnage);
+            Personnage.ZoneAbstraite.Image = null;
+            Personnage.LastPosition = Personnage.ZoneAbstraite;
+            Personnage.LastPosition.PersonnageList.Remove(Personnage);
 
-            personnage.ZoneAbstraite = accesDisponibles[res].ZoneOrigine == personnage.ZoneAbstraite ? accesDisponibles[res].ZoneDestination : accesDisponibles[res].ZoneOrigine;
-            personnage.ZoneAbstraite.PersonnageList.Add(personnage);
+            Personnage.ZoneAbstraite = accesDisponibles[res].ZoneOrigine == Personnage.ZoneAbstraite ? accesDisponibles[res].ZoneDestination : accesDisponibles[res].ZoneOrigine;
+            Personnage.ZoneAbstraite.PersonnageList.Add(Personnage);
 
-            if (personnage.GetType() == typeof(PacMan))
+            if (Personnage.GetType() == typeof(PacMan))
             {
-                if (personnage.ZoneAbstraite.ObjetList.Where(a => a != null).ToList().Exists(a => a.GetType() == typeof(SuperPacGomme)))
+                if (Personnage.ZoneAbstraite.ObjetList.Where(a => a != null).ToList().Exists(a => a.GetType() == typeof(SuperPacGomme)))
                 {
-                    personnage.ComportementCombat = new ComportementAttaque();
-                    personnage.ZoneAbstraite.ObjetList.RemoveAll(a => a is SuperPacGomme);
+                    Personnage.ComportementCombat = new ComportementAttaque(Personnage);
+                    Personnage.ZoneAbstraite.ObjetList.RemoveAll(a => a is SuperPacGomme);
                 }
-                if (personnage.ZoneAbstraite.PersonnageList.Exists(a => a is Fantome))
+                if (Personnage.ZoneAbstraite.PersonnageList.Exists(a => a is Fantome))
                     return "PERDU";
 
-                personnage.ZoneAbstraite.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\pacman.png", UriKind.Relative)));
+                Personnage.ZoneAbstraite.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\pacman.png", UriKind.Relative)));
             }
             else
             {
-                if (personnage.ZoneAbstraite.PersonnageList.Exists(a => a is PacMan))
+                if (Personnage.ZoneAbstraite.PersonnageList.Exists(a => a is PacMan))
                 {
                     //TODO FAIRE QUELQUE CHOSE POUR QUE LE PACMAN ARRIVE A BOUFFER LES FANTOMES !
                 }
-                if (personnage.LastPosition.ObjetList.Exists(a => a.GetType() == typeof(PacGomme) || a.GetType() == typeof(SuperPacGomme)))
-                    personnage.LastPosition.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\point.png", UriKind.Relative)));
+                if (Personnage.LastPosition.ObjetList.Exists(a => a.GetType() == typeof(PacGomme) || a.GetType() == typeof(SuperPacGomme)))
+                    Personnage.LastPosition.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\point.png", UriKind.Relative)));
 
-                personnage.ZoneAbstraite.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-bleu.png", UriKind.Relative)));
+                Personnage.ZoneAbstraite.Image = new ImageBrush(new BitmapImage(new Uri("..\\Debug\\Ressources\\Pacman\\Pacman-bleu.png", UriKind.Relative)));
             }
             return "";
         }

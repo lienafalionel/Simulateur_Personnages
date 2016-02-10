@@ -9,7 +9,7 @@ namespace Simulateur_Personnage.Fabrique.FabriquePlateauDeJeuFolder
     {
         public override PlateauDeJeuAbstrait CreerPlateauDeJeu()
         {
-            return new PlateauVols();
+            return new PlateauDeJeuVols();
         }
 
         //TODO à modifier !

@@ -6,6 +6,7 @@ namespace Simulateur_Personnage
 {
     public abstract class PlateauDeJeuAbstrait
     {
+        protected static PlateauDeJeuAbstrait instance;
         public readonly List<ZoneAbstraite> ZoneList;
         public readonly List<AccesAbstrait> AccesList;
         public readonly List<Personnage> PersonnageList;

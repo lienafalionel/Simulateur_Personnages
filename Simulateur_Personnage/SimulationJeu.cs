@@ -62,7 +62,8 @@ namespace Simulateur_Personnage
                                                         (Action)
                                                         (() =>
                                                              {
-                                                                 returnValue = personnage1.ComportementCombat.Combattre(personnage1, _plateauDeJeuAbstrait);
+                                                                 //returnValue = personnage1.ComportementCombat.Combattre(personnage1, _plateauDeJeuAbstrait);
+                                                                 returnValue = personnage1.Combattre();
                                                              }));
 
                                                     Thread.Sleep(40);
